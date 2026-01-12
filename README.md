@@ -2,7 +2,7 @@
 
 Bienvenue dans le dépôt de mon portfolio personnel. Ce site est une vitrine interactive présentant mes compétences en développement web, mes projets réalisés et un moyen de me contacter.
 
-🌍 **Lien du site :** [https://mon-porfolio.free.nf](https://mon-porfolio.free.nf)
+🌍 **Lien du site :** [https://mon-porfolio.free.nf](https://mon-portfolio.free.nf/)
 
 ---
 
