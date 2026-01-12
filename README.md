@@ -38,4 +38,4 @@ Le projet est construit avec des technologies légères et performantes pour gar
 
 ---
 
-🎨 **Développé avec passion par YaZhrod24**
+🎨 **Développé par YaZhrod24**
