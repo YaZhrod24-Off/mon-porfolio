@@ -29,9 +29,3 @@ Le projet est conçu pour être divisé en plusieurs pages :
 * `projets.html` : Galerie des travaux réalisés.
 * `contact.html` : Formulaire ou liens de contact.
 
----
-
-## 🚀 Installation rapide
-1. **Cloner le projet** :
-   ```bash
-   git clone [https://github.com/votre-utilisateur/votre-repo.git](https://github.com/votre-utilisateur/votre-repo.git)
