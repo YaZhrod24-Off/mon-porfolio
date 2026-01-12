@@ -9,46 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0d0c1d;
-            color: #e0e0e0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #a855f7, #ec4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gradient-btn {
-            background-image: linear-gradient(to right, #a855f7, #ec4899);
-            background-size: 200% auto;
-            transition: background-position 0.5s ease, transform 0.3s ease;
-        }
-        .gradient-btn:hover {
-            background-position: right center;
-            transform: translateY(-3px);
-        }
-        @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        .anim-item {
-            animation: slideInUp 0.6s ease-out forwards;
-            opacity: 0;
-        }
-        main { flex: 1; display: flex; align-items: center; justify-content: center; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #1a1a2e; }
-        ::-webkit-scrollbar-thumb { background: #a855f7; border-radius: 4px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#0d0c1d] text-gray-200">
     <header class="fixed w-full z-20 bg-[#0d0c1d] bg-opacity-80 backdrop-blur-md shadow-lg top-0">
@@ -94,13 +55,6 @@
             </div>
         </div>
     </main>
-    <script>
-        const btn = document.getElementById('mobile-menu-button');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-        document.querySelectorAll('#mobile-menu a').forEach(a => {
-            a.addEventListener('click', () => menu.classList.add('hidden'));
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

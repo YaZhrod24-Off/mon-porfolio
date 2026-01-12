@@ -9,60 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0d0c1d;
-            color: #e0e0e0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        main { flex: 1; }
-        .gradient-text {
-            background: linear-gradient(90deg, #a855f7, #ec4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideInUpNotions {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 0.8; transform: translateY(0); }
-        }
-        .skill-card {
-            position: relative;
-            animation: slideInUp 0.6s ease-out forwards;
-            opacity: 0;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background-color: #1a1a2e;
-        }
-        .skill-card.has-notions {
-            animation-name: slideInUpNotions;
-        }
-        .skill-card:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 0 0 25px rgba(168, 85, 247, 0.4); 
-        }
-        .badge-notions {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ec4899;
-            color: #0d0c1d;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 2px 8px;
-            border-radius: 9999px;
-            opacity: 0.9;
-        }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #1a1a2e; }
-        ::-webkit-scrollbar-thumb { background: #a855f7; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #ec4899; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#0d0c1d] text-gray-200">
     <header class="fixed w-full z-20 bg-[#0d0c1d] bg-opacity-80 backdrop-blur-md shadow-lg">
@@ -88,7 +35,7 @@
     <main>
         <section id="competences" class="py-32 pt-40 min-h-screen">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white skill-card" style="animation-delay: 0s;">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" style="animation-delay: 0s;">
                     Mes Compétences Techniques
                 </h2>
                 <div class="h-1.5 w-24 bg-gradient-to-r from-[#a855f7] to-[#ec4899] mx-auto mb-16 rounded-full skill-card" style="animation-delay: 0.1s;"></div>
@@ -126,19 +73,6 @@
             </div>
         </section>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-            document.querySelectorAll('#mobile-menu a').forEach(anchor => {
-                anchor.addEventListener('click', function () {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
